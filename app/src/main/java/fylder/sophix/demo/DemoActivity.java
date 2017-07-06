@@ -16,17 +16,17 @@ public class DemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo);
-        initView();
-    }
-
-    private void initView() {
         tv = (TextView) findViewById(R.id.demo_text);
         button = (Button) findViewById(R.id.demo_btn);
-        tv.setText("我是热修复的app");
+        ahh();
+    }
+
+    private void ahh() {
+        tv.setText("一箭倾心GMK");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(DemoActivity.this, "我是热修复的app", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DemoActivity.this, "要买呢，还是买呢，还是买呢", Toast.LENGTH_SHORT).show();
             }
         });
     }
